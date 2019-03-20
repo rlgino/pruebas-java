@@ -1,15 +1,17 @@
 package com.patterns.observerLoader;
 
 import java.util.ServiceLoader;
-import java.util.stream.Stream;
-import java.util.stream.StreamSupport;
 
 public class Main {
+    private Main() {
+    }
+
     public static void main(String[] args){
-        ServiceLoader<Observable> loader = ServiceLoader.load(Observable.class);
-        Iterable<Observable> iterable = () -> loader.iterator();
-        Stream<Observable> stream = StreamSupport.stream(iterable.spliterator(), false);
-        stream.forEach(Observable::saludar);
+        final ServiceLoader<Observable> loader = ServiceLoader.load(Observable.class);
+        loader.reload();
+        loader.forEach(Observable::saludar);
+        loader.forEach(Observable::charlar);
+        loader.forEach(Observable::despedir);
 
     }
 }

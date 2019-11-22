@@ -1,5 +1,8 @@
 package com.prueba.CAvsInterface;
 
+/**
+ * Todos sus metodos son abstractos
+ */
 public interface PruebaI {
     public void metodoAbstracto();
 

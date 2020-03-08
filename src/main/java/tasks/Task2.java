@@ -3,6 +3,9 @@ package tasks;
 import java.util.Timer;
 import java.util.TimerTask;
 
+/**
+ * Forma numero 2: Con un TimerTask
+ */
 public class Task2 {
 	public static void main(String[] args) {
 		TimerTask task = new TimerTask() {

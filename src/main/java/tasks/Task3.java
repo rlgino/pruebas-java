@@ -4,6 +4,9 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * Forma 3 con un ScheduledExecutorService
+ */
 public class Task3 {
 
 	public static void main(String[] args) {

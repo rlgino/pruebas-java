@@ -1,5 +1,8 @@
 package tasks;
 
+/**
+ * Forma nro 1 con un runneable y un sleep cada n cantidad de tiempo
+ */
 public class Task1 {
 
     //~ Constructors .................................................................................................................................
